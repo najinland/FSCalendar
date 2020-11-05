@@ -114,7 +114,7 @@ class InterfaceBuilderViewController: UIViewController, FSCalendarDataSource, FS
     
     func calendar(_ calendar: FSCalendar, imageFor date: Date) -> UIImage? {
         let day: Int! = self.gregorian.component(.day, from: date)
-        return [13,24].contains(day) ? UIImage(named: "icon_cat") : nil
+        return [10,24].contains(day) ? UIImage(named: "icon_cat") : nil
     }
     
     // MARK:- FSCalendarDelegate

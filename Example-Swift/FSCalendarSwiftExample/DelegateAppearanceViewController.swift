@@ -83,7 +83,7 @@ class DelegateAppearanceViewController: UIViewController, FSCalendarDataSource, 
     func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, eventDefaultColorsFor date: Date) -> [UIColor]? {
         let key = self.dateFormatter2.string(from: date)
         if self.datesWithMultipleEvents.contains(key) {
-            return [UIColor.magenta, appearance.eventDefaultColor, UIColor.black]
+            return [UIColor.black]
         }
         return nil
     }

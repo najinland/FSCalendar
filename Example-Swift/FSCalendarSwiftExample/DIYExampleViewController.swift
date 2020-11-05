@@ -61,7 +61,7 @@ class DIYExampleViewController: UIViewController, FSCalendarDataSource, FSCalend
         attatchment.image = UIImage(named: "icon_cat")!
         attatchment.bounds = CGRect(x: 0, y: -3, width: attatchment.image!.size.width, height: attatchment.image!.size.height)
         attributedText.append(NSAttributedString(attachment: attatchment))
-        attributedText.append(NSAttributedString(string: "  Hey Daily Event  "))
+        attributedText.append(NSAttributedString(string: "text"))
         attributedText.append(NSAttributedString(attachment: attatchment))
         self.eventLabel.attributedText = attributedText
         
